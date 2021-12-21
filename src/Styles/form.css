@@ -11,6 +11,16 @@
   --color-subtext: #ff8a71;
   --white: #fff;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
 .section {
   width: 100vw;
   max-width: 1400px;
