@@ -11,6 +11,31 @@
   --color-subtext: #ff8a71;
   --white: #fff;
 }
+.section {
+  width: 100vw;
+  max-width: 1400px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media screen and (max-width: 786px) {
+  .section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* -------------------------
+     Form
+----------------------------*/
 .btn {
   padding: 0.5rem 2rem;
   outline: none;
