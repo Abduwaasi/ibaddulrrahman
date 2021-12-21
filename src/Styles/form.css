@@ -11,15 +11,6 @@
   --color-subtext: #ff8a71;
   --white: #fff;
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Montserrat";
-  background-color: var(--color-bg);
-}
 .btn {
   padding: 0.5rem 2rem;
   outline: none;
@@ -65,15 +56,6 @@ body {
 /* ------------------------------
         Form Section
 --------------------------------*/
-.form-section {
-  width: 100%;
-  max-width: 1400px;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .select-option {
   display: flex;
