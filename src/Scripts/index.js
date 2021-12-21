@@ -18,4 +18,5 @@ navToggle.addEventListener("click", function(){
 
 mobileMenu.addEventListener("click",function(){
     mobileMenu.classList.remove("show-mobile-menu")
+    navToggle.querySelector("div").innerHTML = "<i class='fas fa-bars fa-2x '></i>";
 })
