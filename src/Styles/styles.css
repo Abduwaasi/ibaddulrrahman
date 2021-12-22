@@ -88,9 +88,8 @@ a {
   z-index: 100;
 }
 .logo {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--green);
+  width: 6rem;
+  height: 4rem;
 }
 .nav-menu {
   flex-basis: 60%;
@@ -526,6 +525,10 @@ a {
   }
   .footer-link {
     text-align: center;
+  }
+  .logo {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
