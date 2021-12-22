@@ -40,7 +40,7 @@ a {
 }
 
 .section {
-  width: 100vw;
+  width: 100%;
   max-width: 1400px;
   padding-left: 5rem;
   padding-right: 5rem;
