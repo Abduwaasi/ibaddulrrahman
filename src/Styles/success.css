@@ -4,14 +4,14 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: darkblue;
+  background: radial-gradient(circle at 3% 25%, #012349 0%, #040d19 100%);
 }
 .content {
   background-color: #fff;
   padding: 2rem;
   text-align: center;
   border-radius: 8px;
-  box-shadow: 5px 5px 10px;
+  box-shadow: 5px 5px 20px;
 }
 .content h1 {
   font-size: 2rem;
@@ -19,11 +19,13 @@
   letter-spacing: 2px;
   line-height: 1.5;
   margin-bottom: 1rem;
+  color: var(--color-blog);
 }
 .content p {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1.4rem;
+  color: var(--color-blog);
 }
 
 .home-btn {
@@ -33,7 +35,7 @@
   font-size: 1rem;
   font-weight: 400;
   border: transparent;
-  background-color: darkblue;
+  background-color: var(--color-blog);
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
