@@ -97,13 +97,6 @@ form input {
   gap: 2rem;
 }
 
-.input-control.success input {
-  border-color: #09c372;
-}
-
-.input-control.error input {
-  border-color: #ff3860;
-}
 input:not([type="checkbox"]):not([type="radio"]) {
   width: 100%;
 }

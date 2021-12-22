@@ -16,92 +16,20 @@
           <option value="" selected="selected" ></option>
           <option value="individual" >Individual Applicant</option>
           <option value="group" >Group/Family</option>
+          <option value="student" > Student of a tertiary Institution</option>
         </select>
       </div>
  
-          <form class="className" name="individual" id="individual" style="display: none;">
-            <div class="step step-1 active">
-              <h3 class="step-heading">APPLICANT DETAILS </h3>
-              <div class="input-group">
-                <div class="input-control">
-                  <input type="text" id="firstName" name="first-name" placeholder="First Name">
-                  <div class="error"></div>
-                </div>
-                <input type="text" id="lastName" name="last-name" placeholder="Last Name">
-              </div>  
-              <input type="email" id="emailAddress" name="email-address" placeholder="Email">
-              <div class="input-group"> 
-              <input type="text" id="dateOfBirth" name="date-of-birth" placeholder="Date of Birth" onfocus="(this.type='date')">
-              <input type="text" id="city" name="city" placeholder="City">
-              </div>
-              <input type="tel" id="phoneNumber" name="phone-number" placeholder="Phone">
-              <div class="radio">
-                <p>Level of Education:</p>
-                <div class="radio-container">
-                 <div class="radio-group">
-                  <input type="radio" id="beginner" name="qualification" value="beginner">
-                  <label for="beginner">just beginning</label>
-                 </div>
-                 <div class="radio-group">
-                   <input type="radio" id="readRight" name="qualification" value="readRight">
-                   <label for="readRight"> I can read and write</label>  
-                 </div>
-                 <div class="radio-group">
-                  <input type="radio" id="idadi" name="qualification" value="idadi">
-                  <label for="idadi">Certificate of Idadi</label>
-                 </div>
-                  <div class="radio-group">
-                    <input type="radio" id="thanawi" name="qualification" value="thanawi">
-                  <label for="thanawi">Certificate of Thanawi</label>
-                  </div>
-                  <div class="radio-group">
-                    <input type="radio" id="others" name="qualification" value="others">
-                  <label for="others">Others</label>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="btn-container">
-                <button type="button" class="next-btn btn">Next</button>
-              </div>
-            </div>
-      
-            <div class="step step-2">
-              <h3 class="step-heading">CONTACT PERSON’S DETAILS</h3>
-                <input type="text" id="fname" name="fname" placeholder="First Name">
-                <input type="text" id="lname" name="lname" placeholder="Last Name">
-
-                <input type="tel" id="phone" name="phone" placeholder="Phone">
-                <input type="text" id="relationship" name="relationship" placeholder="Relationship">
-                <div class="button-group"> 
-                  <button type="button" class="previous-btn btn">Prev</button>
-                  <button type="button" class="next-btn btn">Next</button>
-                </div>
-            </div>
-      
-            <div class="step step-3">
-              <h3 class="step-heading">Course</h3>
-              <label for="course">Choose a course:</label>
-              <select id="course" name="course">
-                <option value="quran">Quran</option>
-                <option value="shariah">Shariah</option>
-                <option value="arabic">Arabic</option>
-                <option value="audi">Combined</option>
-              </select>
-              <div class="button-group">
-                <button type="button" class="previous-btn btn">Prev</button>
-                <button type="submit" class="submit-btn btn">Submit</button>
-              </div>
-            </div>
-          </form>
-          <form class="className" name="group" id="group" style="display: none;">
+          <form action="https://formspree.io/f/xnqwqepz"   class="className" name="individual" id="individual" style="display: none;">
+            <input type="hidden" name="_subject" value="Ibbadulrrahman E-Academy">
+            <input type="hidden" name="_next" value="./success.html">
             <div class="step step-1 active">
               <h3 class="step-heading">APPLICANT DETAILS </h3>
               <div class="input-group">
                 <input type="text" id="firstName" name="first-name" placeholder="First Name">
                 <input type="text" id="lastName" name="last-name" placeholder="Last Name">
               </div>  
-              <input type="email" id="emailAddress" name="email-address" placeholder="Email">
+              <input type="email" id="emailAddress" name="replyto" placeholder="Email">
               <div class="input-group"> 
               <input type="text" id="dateOfBirth" name="date-of-birth" placeholder="Date of Birth" onfocus="(this.type='date')">
               <input type="text" id="city" name="city" placeholder="City">
@@ -162,7 +90,156 @@
               </select>
               <div class="button-group">
                 <button type="button" class="previous-btn btn">Prev</button>
-                <button type="submit" class="submit-btn btn">Submit</button>
+                <button type="submit" class="submit-btn btn" value="Send">Submit</button>
+              </div>
+            </div>
+          </form>
+          <form action="https://formspree.io/f/mlezeqjz" class="className" name="group" id="group" style="display: none;">
+            <input type="hidden" name="_subject" value="Ibbadulrrahman E-Academy">
+            <input type="hidden" name="_next" value="./success.html">
+            <div class="step step-1 active">
+              <h3 class="step-heading">APPLICANT DETAILS </h3>
+              <div class="input-group">
+                <input type="text" id="firstName" name="first-name" placeholder="First Name">
+                <input type="text" id="lastName" name="last-name" placeholder="Last Name">
+              </div>  
+              <input type="email" id="emailAddress" name="replyto" placeholder="Email">
+              <div class="input-group"> 
+              <input type="text" id="dateOfBirth" name="date-of-birth" placeholder="Date of Birth" onfocus="(this.type='date')">
+              <input type="text" id="city" name="city" placeholder="City">
+              </div>
+              <input type="tel" id="phoneNumber" name="phone-number" placeholder="Phone">
+              <div class="radio">
+                <p>Level of Education:</p>
+                <div class="radio-container">
+                 <div class="radio-group">
+                  <input type="radio" id="beginner" name="qualification" value="beginner">
+                  <label for="beginner">just beginning</label>
+                 </div>
+                 <div class="radio-group">
+                   <input type="radio" id="readRight" name="qualification" value="readRight">
+                   <label for="readRight"> I can read and write</label>  
+                 </div>
+                 <div class="radio-group">
+                  <input type="radio" id="idadi" name="qualification" value="idadi">
+                  <label for="idadi">Certificate of Idadi</label>
+                 </div>
+                  <div class="radio-group">
+                    <input type="radio" id="thanawi" name="qualification" value="thanawi">
+                  <label for="thanawi">Certificate of Thanawi</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" id="others" name="qualification" value="others">
+                  <label for="others">Others</label>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="btn-container">
+                <button type="button" class="next-btn btn">Next</button>
+              </div>
+            </div>
+      
+            <div class="step step-2">
+              <h3 class="step-heading">CONTACT PERSON’S DETAILS</h3>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                <input type="text" id="relationship" name="relationship" placeholder="Relationship">
+                <div class="button-group"> 
+                  <button type="button" class="previous-btn btn">Prev</button>
+                  <button type="button" class="next-btn btn">Next</button>
+                </div>
+            </div>
+      
+            <div class="step step-3">
+              <h3 class="step-heading">Course</h3>
+              <label for="course">Choose a course:</label>
+              <select id="course" name="course">
+                <option value="quran">Quran</option>
+                <option value="shariah">Shariah</option>
+                <option value="arabic">Arabic</option>
+                <option value="audi">Combined</option>
+              </select>
+              <div class="button-group">
+                <button type="button" class="previous-btn btn">Prev</button>
+                <button type="submit" class="submit-btn btn" value="Send">Submit</button>
+              </div>
+            </div>
+          </form>
+          <form action="https://formspree.io/f/myyoyrev" class="className" name="student" id="student" style="display: none;">
+            <input type="hidden" name="_subject" value="Ibbadulrrahman E-Academy">
+            <input type="hidden" name="_next" value="./success.html">
+             <p style="color: black;">for tertiary institution student</p>
+            <div class="step step-1 active">
+              <h3 class="step-heading">APPLICANT DETAILS </h3>
+              <div class="input-group">
+                <input type="text" id="firstName" name="first-name" placeholder="First Name">
+                <input type="text" id="lastName" name="last-name" placeholder="Last Name">
+              </div>  
+              <input type="email" id="emailAddress" name="replyto" placeholder="Email">
+              <div class="input-group"> 
+              <input type="text" id="dateOfBirth" name="date-of-birth" placeholder="Date of Birth" onfocus="(this.type='date')">
+              <input type="text" id="city" name="city" placeholder="City">
+              </div>
+              <input type="tel" id="phoneNumber" name="phone-number" placeholder="Phone">
+              <div class="radio">
+                <p>Level of Education:</p>
+                <div class="radio-container">
+                 <div class="radio-group">
+                  <input type="radio" id="beginner" name="qualification" value="beginner">
+                  <label for="beginner">just beginning</label>
+                 </div>
+                 <div class="radio-group">
+                   <input type="radio" id="readRight" name="qualification" value="readRight">
+                   <label for="readRight"> I can read and write</label>  
+                 </div>
+                 <div class="radio-group">
+                  <input type="radio" id="idadi" name="qualification" value="idadi">
+                  <label for="idadi">Certificate of Idadi</label>
+                 </div>
+                  <div class="radio-group">
+                    <input type="radio" id="thanawi" name="qualification" value="thanawi">
+                  <label for="thanawi">Certificate of Thanawi</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" id="others" name="qualification" value="others">
+                  <label for="others">Others</label>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="btn-container">
+                <button type="button" class="next-btn btn">Next</button>
+              </div>
+            </div>
+      
+            <div class="step step-2">
+              <h3 class="step-heading">CONTACT PERSON’S DETAILS</h3>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                <input type="text" id="relationship" name="relationship" placeholder="Relationship">
+                <div class="button-group"> 
+                  <button type="button" class="previous-btn btn">Prev</button>
+                  <button type="button" class="next-btn btn">Next</button>
+                </div>
+            </div>
+      
+            <div class="step step-3">
+              <h3 class="step-heading">Course</h3>
+              <label for="course">Choose a course:</label>
+              <select id="course" name="course">
+                <option value="quran">Quran</option>
+                <option value="shariah">Shariah</option>
+                <option value="arabic">Arabic</option>
+                <option value="audi">Combined</option>
+              </select>
+              <div class="button-group">
+                <button type="button" class="previous-btn btn">Prev</button>
+                <button type="submit" class="submit-btn btn" value="Send">Submit</button>
               </div>
             </div>
           </form>

@@ -1,0 +1,51 @@
+.success-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: darkblue;
+}
+.content {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px;
+}
+.content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.content p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
+.home-btn {
+  padding: 0.5rem 2rem;
+  outline: none;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  border: transparent;
+  background-color: darkblue;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.home-btn:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+/* Form Media Query */
+
+@media screen and (max-width: 425px) {
+  .content h1 {
+    font-size: 1.4rem;
+  }
+}
