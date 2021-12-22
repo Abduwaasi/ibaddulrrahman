@@ -7,6 +7,11 @@
   --bold-text: #1d1d35;
   --light-text: #898d95;
   --white: #fff;
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
 
   /* Transition */
   --transition: all 0.4s ease;
@@ -28,6 +33,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  background-color: var(--color-bg);
 }
 
 li {
@@ -66,12 +72,17 @@ a {
     padding-right: 1rem;
   }
 }
+.text-gradient {
+  background: -webkit-linear-gradient(#ae67fa, #f49867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* ------------------------------
             NAVBAR
 ---------------------------------*/
 .navbar {
-  background-color: var(--white);
+  background: radial-gradient(circle at 3% 25%, #012349 0%, #040d19 100%);
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -94,7 +105,7 @@ a {
 .nav-link {
   font-size: 1.1rem;
   font-weight: 400;
-  color: var(--bold-text);
+  color: var(--white);
   text-transform: capitalize;
   letter-spacing: 2px;
   position: relative;
@@ -103,7 +114,7 @@ a {
 .nav-link::after {
   content: "";
   position: absolute;
-  background-color: var(--green);
+  background-color: var(--color-subtext);
   width: 0;
   height: 2px;
   bottom: -5px;
@@ -115,20 +126,19 @@ a {
 }
 
 .register-btn {
-  border: 1px solid var(--green);
+  border: 1px solid var(--color-subtext);
   padding: 0.5rem 1.5rem;
   border-radius: 0.4rem;
-  background-color: transparent;
-  color: var(--bold-text);
+  background-color: var(--color-subtext);
+  color: var(--white);
   letter-spacing: 2px;
   transition: var(--transition);
 }
 .register-btn:hover {
-  background-color: var(--green);
-  color: var(--white);
+  transform: scale3d(-1.4, 0.4, 0.7);
 }
 .bar-icon {
-  color: var(--bold-text);
+  color: var(--white);
   cursor: pointer;
   outline: none;
   background-color: transparent;
@@ -145,7 +155,9 @@ a {
   left: 0;
   display: flex;
   flex-direction: column;
-  background-color: var(--white);
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 3% 25%, #012349 0%, #040d19 100%);
   height: 0;
   width: 0;
   overflow: hidden;
@@ -155,7 +167,7 @@ a {
 .show-mobile-menu {
   padding: 2rem;
   height: 90vh;
-  width: 50%;
+  width: 100%;
 }
 .mobile-item {
   margin: 1rem 0;
@@ -173,8 +185,8 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5f9fc;
-  padding-top: 3rem;
+  background: radial-gradient(circle at 3% 25%, #012349 0%, #040d19 100%);
+  padding-top: 4rem;
   padding-bottom: 3rem;
 }
 
@@ -184,7 +196,7 @@ a {
 .left-header h1 {
   font-size: 3rem;
   font-weight: 600;
-  color: var(--bold-text);
+  text-rendering: optimizeLegibility;
   line-height: 1.2;
   letter-spacing: 2px;
   text-transform: capitalize;
@@ -193,7 +205,7 @@ a {
 }
 .left-header p {
   font-size: 1rem;
-  color: var(--light-text);
+  color: var(--color-text);
   line-height: 1.4;
   letter-spacing: 1px;
   margin-bottom: 2rem;
@@ -237,7 +249,6 @@ a {
 .about-details h2 {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--bold-text);
   line-height: 1.2;
   letter-spacing: 2px;
   text-transform: capitalize;
@@ -246,7 +257,7 @@ a {
 }
 .about-details p {
   font-size: 1rem;
-  color: var(--light-text);
+  color: var(--color-text);
   line-height: 2;
   letter-spacing: 1px;
   margin-bottom: 2rem;
@@ -257,13 +268,13 @@ a {
 --------------------------------------*/
 
 .enroll {
-  background-color: var(--dark);
+  background: radial-gradient(circle at 3% 25%, #012349 0%, #040d19 100%);
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 .enroll h2 {
-  color: var(--light-text);
+  color: var(--color-text);
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: capitalize;
@@ -277,12 +288,16 @@ a {
   row-gap: 2rem;
   margin-top: 2rem;
 }
+.enroll-card {
+  background-color: var(--color-bg);
+  padding: 1.5rem 1rem;
+}
 .icon-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--green);
+  color: var(--white);
   margin-bottom: 1rem;
 }
 .icon-wrapper h3 {
@@ -294,16 +309,25 @@ a {
 .enroll-card p {
   font-size: 1rem;
   font-weight: 300;
-  color: var(--light-text);
+  color: var(--color-text);
   line-height: 1.4;
 }
 /* ------------------------------
           Course and Pricing
 ---------------------------------*/
 .pricing {
-  background-color: var(--bold-text);
+  background: radial-gradient(circle at 3% 25%, #012349 0%, #040d19 100%);
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+.pricing h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .pricing-center {
   display: grid;
@@ -311,13 +335,13 @@ a {
   gap: 1rem;
 }
 .pricing-card {
-  background-color: var(--dark);
+  background-color: var(--color-bg);
   padding: 1rem;
-  box-shadow: 3px 5px 5px var(--bold-text);
+  box-shadow: 5px 5px 15px;
 }
 .pricing-card h3 {
   text-align: center;
-  color: var(--light-text);
+  color: var(--white);
   font-size: 1.4rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -327,20 +351,21 @@ a {
 
 .price {
   text-align: center;
-  color: var(--white);
-  font-size: 1rem;
-  font-weight: 700;
+  color: var(--color-subtext);
+  font-size: 1.5rem;
+  font-weight: 900;
   margin: 2rem auto;
 }
 .price span {
   font-size: 0.8rem;
+  color: var(--white);
 }
 .pricing-card p {
   position: relative;
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  color: var(--light-text);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--color-text);
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -348,7 +373,7 @@ a {
   font-family: "Font Awesome 5 Free";
   content: "\f00c";
   font-size: 0.9rem;
-  color: var(--green);
+  color: var(--color-subtext);
   font-weight: 900;
   margin-right: 1rem;
 }
@@ -359,10 +384,10 @@ a {
 .eligibility {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  background: radial-gradient(circle at 3% 25%, #012349 0%, #040d19 100%);
 }
 .eligibility h2 {
   text-align: center;
-  color: var(--bold-text);
   font-size: 2rem;
   font-weight: 700;
   text-transform: capitalize;
@@ -370,21 +395,22 @@ a {
   line-height: 2;
 }
 .eligibility-info {
-  max-width: 70%;
+  width: 700px;
+  max-width: 95%;
 }
 .eligibility-info h3 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 1px;
-  color: var(--dark);
+  color: var(--white);
   margin-bottom: 2rem;
 }
 
 .eligibility-info p {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--dark);
+  color: var(--color-text);
   letter-spacing: 1px;
   line-height: 2;
   margin-bottom: 0.6rem;
@@ -394,21 +420,30 @@ a {
   font-family: "Font Awesome 5 Free";
   content: "\f00c";
   font-size: 0.9rem;
-  color: var(--green);
+  color: var(--color-subtext);
   font-weight: 900;
   margin-right: 1rem;
 }
+.eligibility-info h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-text);
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* ---------------------------
          Footer
 -----------------------------*/
 .footer {
   padding-top: 4rem;
-  background-color: var(--dark);
+  background: var(--color-footer);
 }
 .footer h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--light-text);
   letter-spacing: 1px;
   line-height: 2;
   margin-bottom: 1rem;
@@ -429,15 +464,14 @@ a {
 
 .footer-link h4 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 1px;
   line-height: 2;
 }
 .footer-link p,
 a {
   font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-weight: 400;
   line-height: 2;
 }
 .copyright {
@@ -492,6 +526,9 @@ a {
   }
   .eligibility-info {
     max-width: 100%;
+  }
+  .footer-link {
+    text-align: center;
   }
 }
 
