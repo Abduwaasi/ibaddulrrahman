@@ -1,4 +1,4 @@
-const { response } = require("express");
+// const { response } = require("express");
 
 // Display a large form in different steps
 const steps = Array.from(document.querySelectorAll("form .step"));
@@ -69,7 +69,7 @@ function changeOptions(selectEI){
 
 function redirect(){
   if(response.status===200){
-    window.location.href="https://ibaddulrrahman.netlify.app/success.html"
+    window.location.href="../success.html"
   }
 }
 
