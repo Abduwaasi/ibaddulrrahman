@@ -1,3 +1,4 @@
+const { response } = require("express");
 
 // Display a large form in different steps
 const steps = Array.from(document.querySelectorAll("form .step"));
@@ -64,6 +65,12 @@ function changeOptions(selectEI){
         subForms[i].setAttribute("style","display:none")
       }
     }
+}
+
+function redirect(){
+  if(response.status===200){
+    window.location.href="https://ibaddulrrahman.netlify.app/success.html"
+  }
 }
 
 
