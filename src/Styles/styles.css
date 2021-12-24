@@ -25,6 +25,8 @@
 }
 html {
   scroll-behavior: smooth;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 body {
