@@ -23,7 +23,6 @@
  
           <form action="https://formsubmit.co/wasiuadekunle73@gmail.com"  method="post" class="className" name="individual" id="individual" style="display: none;" >
             <input type="hidden" name="_subject" value="Ibbadulrrahman E-Academy">
-            <input type="hidden" name="_autoresponse" value="what is up">
             <input type="hidden"  name="_template" value="table">
             <input type="hidden" name="_next" value="https://ibaddulrrahman.netlify.app/success.html">
             <div class="step step-1 active">
@@ -32,7 +31,7 @@
                 <input type="text" id="firstName" name="first-name" placeholder="First Name" required>
                 <input type="text" id="lastName" name="last-name" placeholder="Last Name" required>
               </div>  
-              <input type="email" id="emailAddress" name="replyto" placeholder="Email" required>
+              <input type="email" id="emailAddress" name="_replyto" placeholder="Email" required>
               <div class="input-group"> 
               <input type="text" id="dateOfBirth" name="date-of-birth" placeholder="Date of Birth" onfocus="(this.type='date')" required>
               <input type="text" id="city" name="city" placeholder="City" required>
@@ -42,19 +41,19 @@
                 <p>Level of Education:</p>
                 <div class="radio-container">
                  <div class="radio-group">
-                  <input type="radio" id="beginner" name="qualification" value="beginner" required>
+                  <input type="radio" id="beginner" name="qualification" value="Beginner" required>
                   <label for="beginner">just beginning</label>
                  </div>
                  <div class="radio-group">
-                   <input type="radio" id="readRight" name="qualification" value="readRight" required>
+                   <input type="radio" id="readRight" name="qualification" value="Read and write" required>
                    <label for="readRight"> I can read and write</label>  
                  </div>
                  <div class="radio-group">
-                  <input type="radio" id="idadi" name="qualification" value="idadi" required>
+                  <input type="radio" id="idadi" name="qualification" value="Idadi" required>
                   <label for="idadi">Certificate of Idadi</label>
                  </div>
                   <div class="radio-group">
-                    <input type="radio" id="thanawi" name="qualification" value="thanawi" required>
+                    <input type="radio" id="thanawi" name="qualification" value="Thanawi" required>
                   <label for="thanawi">Certificate of Thanawi</label>
                   </div>
                   <div class="radio-group">
@@ -86,10 +85,10 @@
               <h3 class="step-heading">Course</h3>
               <label for="course">Choose a course:</label>
               <select id="course" name="course">
-                <option value="quran">Quran</option>
-                <option value="shariah">Shariah</option>
-                <option value="arabic">Arabic</option>
-                <option value="audi">Combined</option>
+                <option value="Quran">Quran</option>
+                <option value="Shariah">Shariah</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Combined">Combined</option>
               </select>
               <div class="button-group">
                 <button type="button" class="previous-btn btn">Prev</button>
@@ -97,8 +96,9 @@
               </div>
             </div>
           </form>
-          <form action="https://formspree.io/f/mlezeqjz" method="post" class="className" name="group" id="group" style="display: none;">
+          <form action="https://formsubmit.co/wasiuadekunle73@gmail.com" method="post" class="className" name="group" id="group" style="display: none;">
             <input type="hidden" name="_subject" value="Ibbadulrrahman E-Academy">
+            <input type="hidden"  name="_template" value="table">
             <input type="hidden" name="_next" value="https://ibaddulrrahman.netlify.app/success.html">
             <div class="step step-1 active">
               <h3 class="step-heading">APPLICANT DETAILS </h3>
@@ -106,7 +106,7 @@
                 <input type="text" id="firstName" name="first-name" placeholder="First Name" required required>
                 <input type="text" id="lastName" name="last-name" placeholder="Last Name" required required>
               </div>  
-              <input type="email" id="emailAddress" name="replyto" placeholder="Email" required required>
+              <input type="email" id="emailAddress" name="_replyto" placeholder="Email" required required>
               <div class="input-group"> 
               <input type="text" id="dateOfBirth" name="date-of-birth" placeholder="Date of Birth" onfocus="(this.type='date')" required required>
               <input type="text" id="city" name="city" placeholder="City" required required>
@@ -116,23 +116,23 @@
                 <p>Level of Education:</p>
                 <div class="radio-container">
                  <div class="radio-group">
-                  <input type="radio" id="beginner" name="qualification" value="beginner" required>
+                  <input type="radio" id="beginner" name="qualification" value="Beginner" required>
                   <label for="beginner">just beginning</label>
                  </div>
                  <div class="radio-group">
-                   <input type="radio" id="readRight" name="qualification" value="readRight" required>
+                   <input type="radio" id="readRight" name="qualification" value="Read and write" required>
                    <label for="readRight"> I can read and write</label>  
                  </div>
                  <div class="radio-group">
-                  <input type="radio" id="idadi" name="qualification" value="idadi" required>
+                  <input type="radio" id="idadi" name="qualification" value="Idadi" required>
                   <label for="idadi">Certificate of Idadi</label>
                  </div>
                   <div class="radio-group">
-                    <input type="radio" id="thanawi" name="qualification" value="thanawi" required>
+                    <input type="radio" id="thanawi" name="qualification" value="Thanawi" required>
                   <label for="thanawi">Certificate of Thanawi</label>
                   </div>
                   <div class="radio-group">
-                    <input type="radio" id="others" name="qualification" value="others" required>
+                    <input type="radio" id="others" name="qualification" value="Others" required>
                   <label for="others">Others</label>
                   </div>
                 </div>
@@ -145,11 +145,11 @@
       
             <div class="step step-2">
               <h3 class="step-heading">CONTACT PERSON’S DETAILS</h3>
-                <input type="text" id="fname" name="fname" placeholder="First Name" required>
-                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                <input type="text" id="fname" name="contact-person-firstname" placeholder="First Name" required>
+                <input type="text" id="lname" name="contact-person-lastname" placeholder="Last Name" required>
 
-                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
-                <input type="text" id="relationship" name="relationship" placeholder="Relationship" required>
+                <input type="tel" id="phone" name="Phone Number" placeholder="Phone" required>
+                <input type="text" id="relationship" name="Relationship" placeholder="Relationship" required>
                 <div class="button-group"> 
                   <button type="button" class="previous-btn btn">Prev</button>
                   <button type="button" class="next-btn btn">Next</button>
@@ -160,20 +160,20 @@
               <h3 class="step-heading">Course</h3>
               <label for="course">Choose a course:</label>
               <select id="course" name="course">
-                <option value="quran">Quran</option>
-                <option value="shariah">Shariah</option>
-                <option value="arabic">Arabic</option>
-                <option value="audi">Combined</option>
+                <option value="Quran">Quran</option>
+                <option value="Shariah">Shariah</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Combined">Combined</option>
               </select>
               <div class="button-group">
                 <button type="button" class="previous-btn btn">Prev</button>
-                <button type="button" class="next-person btn">Next Person</button>
                 <button type="submit" class="submit-btn btn" value="Send">Submit</button>
               </div>
             </div>
           </form>
-          <form action="https://formspree.io/f/myyoyrev" method="post" class="className" name="student" id="student" style="display: none;">
+          <form action="https://formsubmit.co/wasiuadekunle73@gmail.com" method="post" class="className" name="student" id="student" style="display: none;">
             <input type="hidden" name="_subject" value="Ibbadulrrahman E-Academy">
+            <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="https://ibaddulrrahman.netlify.app/success.html">
              <p style="color: black;">for tertiary institution student</p>
             <div class="step step-1 active">
@@ -182,35 +182,35 @@
                 <input type="text" id="firstName" name="first-name" placeholder="First Name" required>
                 <input type="text" id="lastName" name="last-name" placeholder="Last Name" required>
               </div>  
-              <input type="email" id="emailAddress" name="replyto" placeholder="Email" required>
+              <input type="email" id="emailAddress" name="_replyto" placeholder="Email" required>
               <div class="input-group"> 
               <input type="text" id="dateOfBirth" name="date-of-birth" placeholder="Date of Birth" onfocus="(this.type='date')" required>
               <input type="text" id="city" name="city" placeholder="City" required>
               </div>
               <input type="tel" id="phoneNumber" name="phone-number" placeholder="Phone" required>
-              <input type="text" id="institutionName" name="institutionName" placeholder="Name of Institution" required>
+              <input type="text" id="institutionName" name="Name-of-institution" placeholder="Name of Institution" required>
               <div class="student-info">Note:All tertiary institution students are to present their ID cards during the interview</div>
               <div class="radio">
                 <p>Level of Education:</p>
                 <div class="radio-container">
                  <div class="radio-group">
-                  <input type="radio" id="beginner" name="qualification" value="beginner" required>
+                  <input type="radio" id="beginner" name="qualification" value="Beginner" required>
                   <label for="beginner">just beginning</label>
                  </div>
                  <div class="radio-group">
-                   <input type="radio" id="readRight" name="qualification" value="readRight" required>
+                   <input type="radio" id="readRight" name="qualification" value="Read and write" required>
                    <label for="readRight"> I can read and write</label>  
                  </div>
                  <div class="radio-group">
-                  <input type="radio" id="idadi" name="qualification" value="idadi" required>
+                  <input type="radio" id="idadi" name="qualification" value="Idadi" required>
                   <label for="idadi">Certificate of Idadi</label>
                  </div>
                   <div class="radio-group">
-                    <input type="radio" id="thanawi" name="qualification" value="thanawi" required>
+                    <input type="radio" id="thanawi" name="qualification" value="Thanawi" required>
                   <label for="thanawi">Certificate of Thanawi</label>
                   </div>
                   <div class="radio-group">
-                    <input type="radio" id="others" name="qualification" value="others" required>
+                    <input type="radio" id="others" name="qualification" value="Others" required>
                   <label for="others">Others</label>
                   </div>
                 </div>
@@ -223,11 +223,11 @@
       
             <div class="step step-2">
               <h3 class="step-heading">CONTACT PERSON’S DETAILS</h3>
-                <input type="text" id="fname" name="fname" placeholder="First Name" required>
-                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                <input type="text" id="fname" name="contact-person-firstname" placeholder="First Name" required>
+                <input type="text" id="lname" name="contact-person-lastname" placeholder="Last Name" required>
 
-                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
-                <input type="text" id="relationship" name="relationship" placeholder="Relationship" required>
+                <input type="tel" id="phone" name="Phone" placeholder="Phone" required>
+                <input type="text" id="relationship" name="Relationship" placeholder="Relationship" required>
                 <div class="button-group"> 
                   <button type="button" class="previous-btn btn">Prev</button>
                   <button type="button" class="next-btn btn">Next</button>
@@ -238,10 +238,10 @@
               <h3 class="step-heading">Course</h3>
               <label for="course">Choose a course:</label>
               <select id="course" name="course">
-                <option value="quran">Quran</option>
-                <option value="shariah">Shariah</option>
-                <option value="arabic">Arabic</option>
-                <option value="audi">Combined</option>
+                <option value="Quran">Quran</option>
+                <option value="Shariah">Shariah</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Combined">Combined</option>
               </select>
               <div class="button-group">
                 <button type="button" class="previous-btn btn">Prev</button>
