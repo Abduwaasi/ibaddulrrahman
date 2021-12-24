@@ -35,21 +35,7 @@ function changeStep(btn) {
   } else if (btn === "prev") {
     index--;
   }
-  // else if (btn==="nextPerson"){
-  //   for (let i = 0; i < 3; i++) {
-  //     index=3;
-  //     active.reset()
-     
-      
-  //   }
-  //   // form.querySelectorAll("input").forEach((input) => {
-  //   //       const inputs = []
-  //   //       const { name, value } = input;
-  //   //       inputs.push({ name, value });
-  //   //       console.log(inputs);
-  //   //       form.reset();
-  //   //     });
-  // }
+
   steps[index].classList.add("active");
 }
  
@@ -67,10 +53,18 @@ function changeOptions(selectEI){
     }
 }
 
-function redirect(){
-  if(response.status===200){
-    window.location.href="../success.html"
-  }
-}
+
+
+
+
+// const redirect = document.querySelector("#redirect")
+// redirect.addEventListener("click",function (e){
+//   if(Response.statusCode ===200){
+//     e.preventDefault()
+
+//     window.location.href="https://ibaddulrrahman.netlify.app/success.html"
+//   }
+
+// } )
 
 
