@@ -20,5 +20,6 @@ navToggle.addEventListener("click", function(){
 
 mobileMenu.addEventListener("click",function(){
     mobileMenu.classList.remove("show-mobile-menu")
+    mobileMenu.classList.remove("scale-in-center")
     navToggle.querySelector("div").innerHTML = "<i class='fas fa-bars fa-2x '></i>";
 })

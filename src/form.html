@@ -14,7 +14,7 @@
 </head>
 <body>
     <section class="form-section section">
-      <h2 class="text-gradient">Select your application category from the dropdown below</h2>
+      <h2>Select your application category from the dropdown below</h2>
       <div class="select-option">
         <h3>Options: </h3>
         <select onchange="changeOptions(this)" >
@@ -105,12 +105,13 @@
             <input type="hidden"  name="_template" value="table">
             <input type="hidden" name="_next" value="https://ibaddulrrahman.netlify.app/success.html">
             <div class="step step-1 active">
-              <h3 class="step-heading">APPLICANT DETAILS </h3>
+              <h3 class="step-heading">Group members representative details </h3>
               <div class="input-group">
                 <input type="text" id="firstName" name="first-name" placeholder="First Name" required required>
                 <input type="text" id="lastName" name="last-name" placeholder="Last Name" required required>
               </div>  
               <input type="email" id="emailAddress" name="email" placeholder="Email" required required>
+              <input type="number" id="groupNumber" name="No-of-group-member" placeholder="Number of group members" required required>
               <div class="input-group"> 
               <input type="text" id="dateOfBirth" name="date-of-birth" placeholder="Date of Birth" onfocus="(this.type='date')" required required>
               <input type="text" id="city" name="city" placeholder="City" required required>
@@ -179,9 +180,9 @@
             <input type="hidden" name="_subject" value="Ibbadulrrahman E-Academy">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="https://ibaddulrrahman.netlify.app/success.html">
-             <p style="color: black;">for tertiary institution student</p>
+          
             <div class="step step-1 active">
-              <h3 class="step-heading">APPLICANT DETAILS </h3>
+              <h3 class="step-heading">For tertiary institution student</h3>
               <div class="input-group">
                 <input type="text" id="firstName" name="first-name" placeholder="First Name" required>
                 <input type="text" id="lastName" name="last-name" placeholder="Last Name" required>
