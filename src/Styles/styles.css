@@ -269,6 +269,7 @@ a {
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: var(--white);
 }
 .about-img {
   flex: 1;
