@@ -442,7 +442,7 @@ a {
   color: var(--color-bg);
   line-height: 2;
   text-align: left;
-  width: 700px;
+  width: 800px;
   max-width: 95%;
 }
 .discount p::before {
