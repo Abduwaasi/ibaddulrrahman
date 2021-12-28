@@ -4,28 +4,44 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: radial-gradient(circle at 3% 25%, #012349 0%, #040d19 100%);
 }
 .content {
-  background-color: #fff;
+  background-color: var(--light-blue);
   padding: 2rem;
   text-align: center;
   border-radius: 8px;
   box-shadow: 5px 5px 20px;
+  width: 700px;
+  max-width: 95%;
 }
 .content h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 1.5;
   margin-bottom: 1rem;
   color: var(--color-blog);
 }
-.content p {
+.last {
+  margin-bottom: 1rem;
+}
+
+.proceed {
+  text-align: left;
+  color: var(--blue);
+  font-weight: 600;
+}
+.bank-details {
+  background-color: var(--white);
+  padding: 2rem;
+  text-align: left;
+  margin: 1rem auto;
+}
+.bank-details p {
   font-size: 1rem;
-  font-weight: 400;
   margin-bottom: 1.4rem;
-  color: var(--color-blog);
+  color: var(--blue);
+  font-weight: 900;
 }
 
 .home-btn {
@@ -48,6 +64,6 @@
 
 @media screen and (max-width: 425px) {
   .content h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
